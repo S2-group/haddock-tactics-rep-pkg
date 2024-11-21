@@ -1,0 +1,7 @@
+pandas
+stats
+seaborn
+numpy
+matplotlib
+regex
+cliffs_deta
