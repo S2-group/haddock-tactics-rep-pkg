@@ -4,7 +4,7 @@ import seaborn as sns
 sns.set(rc={"figure.dpi":300, 'savefig.dpi':300})
 sns.set_style('white')
 
-def show_boxplot(data, title, x_label = "", y_label = "", store=False):
+def show_boxplot(data, title, metric, x_label = "", y_label = "", store=False):
     fig, ax = plt.subplots(figsize=(15, 10))
     PROPS = {
         'boxprops':{'facecolor':'none', 'edgecolor':'red'},
@@ -13,16 +13,27 @@ def show_boxplot(data, title, x_label = "", y_label = "", store=False):
         'capprops':{'color':'magenta'}
     }
 
-    sns.boxplot(x='NCPUS',y='ConsumedEnergy',
-                data=data,
-                showfliers=False,
-                linewidth=1.5,
-                ax=ax,
-                **PROPS)
+    #sns.boxplot(x='NCPUS',y=metric,
+    #            data=data,
+    #            showfliers=False,
+    #            linewidth=1.5,
+    #            ax=ax,
+    #            **PROPS)
 
-    sns.swarmplot(x='NCPUS', y='ConsumedEnergy',
+    sns.violinplot(x='NCPUS',y=metric,
+                data=data,
+                ax=ax,
+                fill=False,
+                inner="quart",
+                linewidth=2,
+                width=1.1,
+                density_norm='count'
+    )
+
+    sns.swarmplot(x='NCPUS', y=metric,
                   data=data,
-                  color=".25",
+                  #color=".25",
+                  color="red",
                   ax=ax)
 
     # Customize the plot
