@@ -1,0 +1,54 @@
+[2023-12-07 17:25:20,120 cli INFO] 
+##############################################
+#                                            #
+#                 HADDOCK 3                  #
+#                                            #
+##############################################
+
+Starting HADDOCK 3.0.0 on 2023-12-07 17:25:00
+
+Python 3.9.18 (main, Sep 11 2023, 13:41:44) 
+[GCC 11.2.0]
+
+[2023-12-07 17:25:27,506 libworkflow INFO] Reading instructions step 0_topoaa
+[2023-12-07 17:25:27,506 libworkflow INFO] Reading instructions step 1_rigidbody
+[2023-12-07 17:25:27,507 libworkflow INFO] Reading instructions step 2_seletop
+[2023-12-07 17:25:27,507 libworkflow INFO] Reading instructions step 3_caprieval
+[2023-12-07 17:25:27,507 libworkflow INFO] Reading instructions step 4_flexref
+[2023-12-07 17:25:27,508 libworkflow INFO] Reading instructions step 5_caprieval
+[2023-12-07 17:25:27,508 libworkflow INFO] Reading instructions step 6_emref
+[2023-12-07 17:25:27,509 libworkflow INFO] Reading instructions step 7_caprieval
+[2023-12-07 17:25:27,710 base_cns_module INFO] Running [topoaa] module
+[2023-12-07 17:25:27,711 __init__ INFO] [topoaa] Molecule 1: e2aP_1F3G.pdb
+[2023-12-07 17:25:27,718 __init__ INFO] [topoaa] Sanitizing molecule e2aP_1F3G.pdb
+[2023-12-07 17:25:27,848 __init__ INFO] [topoaa] Topology CNS input created in e2aP_1F3G.inp
+[2023-12-07 17:25:27,848 __init__ INFO] [topoaa] Molecule 2: hpr_ensemble.pdb
+[2023-12-07 17:25:28,710 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_1.pdb
+[2023-12-07 17:25:28,890 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_1.inp
+[2023-12-07 17:25:28,890 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_2.pdb
+[2023-12-07 17:25:29,146 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_2.inp
+[2023-12-07 17:25:29,146 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_3.pdb
+[2023-12-07 17:25:29,416 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_3.inp
+[2023-12-07 17:25:29,416 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_4.pdb
+[2023-12-07 17:25:29,705 libutil ERROR] [Errno 28] No space left on device
+Traceback (most recent call last):
+  File "/home/greenBeans/haddock3/src/haddock/libs/libutil.py", line 310, in log_error_and_exit
+    yield
+  File "/home/greenBeans/haddock3/src/haddock/clis/cli.py", line 178, in main
+    workflow.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libworkflow.py", line 39, in run
+    step.execute()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libworkflow.py", line 143, in execute
+    self.module.run()
+  File "/home/greenBeans/haddock3/src/haddock/modules/base_cns_module.py", line 59, in run
+    self._run()
+  File "/home/greenBeans/haddock3/src/haddock/modules/topology/topoaa/__init__.py", line 187, in _run
+    topology_filename = generate_topology(
+  File "/home/greenBeans/haddock3/src/haddock/modules/topology/topoaa/__init__.py", line 66, in generate_topology
+    output_inp_filename.write_text(inp)
+  File "/home/greenBeans/anaconda3/envs/haddock3/lib/python3.9/pathlib.py", line 1286, in write_text
+    return f.write(data)
+OSError: [Errno 28] No space left on device
+[2023-12-07 17:25:29,706 libutil ERROR] [Errno 28] No space left on device
+[2023-12-07 17:25:29,706 libutil ERROR] An error has occurred, see log file. And contact the developers if needed.
+[2023-12-07 17:25:29,707 libutil INFO] Finished at 07/12/2023 17:25:29. For any help contact us at https://github.com/haddocking/haddock3/issues. Tot ziens! Adéu-siau! Dovidenia!.

@@ -1,0 +1,60 @@
+[2023-12-07 22:53:40,079 cli INFO] 
+##############################################
+#                                            #
+#                 HADDOCK 3                  #
+#                                            #
+##############################################
+
+Starting HADDOCK 3.0.0 on 2023-12-07 22:53:00
+
+Python 3.9.18 (main, Sep 11 2023, 13:41:44) 
+[GCC 11.2.0]
+
+[2023-12-07 22:53:45,487 libworkflow INFO] Reading instructions step 0_topoaa
+[2023-12-07 22:53:45,487 libworkflow INFO] Reading instructions step 1_rigidbody
+[2023-12-07 22:53:45,487 libworkflow INFO] Reading instructions step 2_caprieval
+[2023-12-07 22:53:45,487 libworkflow INFO] Reading instructions step 3_seletop
+[2023-12-07 22:53:45,487 libworkflow INFO] Reading instructions step 4_caprieval
+[2023-12-07 22:53:45,487 libworkflow INFO] Reading instructions step 5_flexref
+[2023-12-07 22:53:45,487 libworkflow INFO] Reading instructions step 6_caprieval
+[2023-12-07 22:53:45,488 libworkflow INFO] Reading instructions step 7_emref
+[2023-12-07 22:53:45,488 libworkflow INFO] Reading instructions step 8_caprieval
+[2023-12-07 22:53:45,488 libworkflow INFO] Reading instructions step 9_clustfcc
+[2023-12-07 22:53:45,488 libworkflow INFO] Reading instructions step 10_seletopclusts
+[2023-12-07 22:53:45,488 libworkflow INFO] Reading instructions step 11_caprieval
+[2023-12-07 22:53:45,620 base_cns_module INFO] Running [topoaa] module
+[2023-12-07 22:53:45,621 __init__ INFO] [topoaa] Molecule 1: 4G6K_fv.pdb
+[2023-12-07 22:53:45,627 __init__ INFO] [topoaa] Sanitizing molecule 4G6K_fv.pdb
+[2023-12-07 22:53:45,795 __init__ INFO] [topoaa] Topology CNS input created in 4G6K_fv.inp
+[2023-12-07 22:53:45,795 __init__ INFO] [topoaa] Molecule 2: 4I1B-matched.pdb
+[2023-12-07 22:53:45,801 __init__ INFO] [topoaa] Sanitizing molecule 4I1B-matched.pdb
+[2023-12-07 22:53:46,066 __init__ INFO] [topoaa] Topology CNS input created in 4I1B-matched.inp
+[2023-12-07 22:53:46,066 __init__ INFO] [topoaa] Running CNS Jobs n=2
+[2023-12-07 22:53:46,066 libutil INFO] Selected 2 cores to process 2 jobs, with 8 maximum available cores.
+[2023-12-07 22:53:46,066 libparallel INFO] Using 2 cores
+[2023-12-07 22:53:50,507 libparallel INFO] >> /4G6K_fv.inp completed 50% 
+[2023-12-07 22:53:50,508 libparallel INFO] >> /4I1B-matched.inp completed 100% 
+[2023-12-07 22:53:50,508 libparallel INFO] 2 tasks finished
+[2023-12-07 22:53:50,508 __init__ INFO] [topoaa] CNS jobs have finished
+[2023-12-07 22:53:50,525 libutil ERROR] [Errno 28] No space left on device
+Traceback (most recent call last):
+  File "/home/greenBeans/haddock3/src/haddock/libs/libutil.py", line 310, in log_error_and_exit
+    yield
+  File "/home/greenBeans/haddock3/src/haddock/clis/cli.py", line 178, in main
+    workflow.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libworkflow.py", line 38, in run
+    step.execute()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libworkflow.py", line 140, in execute
+    self.module.run()
+  File "/home/greenBeans/haddock3/src/haddock/modules/base_cns_module.py", line 59, in run
+    self._run()
+  File "/home/greenBeans/haddock3/src/haddock/modules/topology/topoaa/__init__.py", line 255, in _run
+    self.export_output_models(faulty_tolerance=self.params["tolerance"])
+  File "/home/greenBeans/haddock3/src/haddock/modules/__init__.py", line 272, in export_output_models
+    io.save()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libontology.py", line 139, in save
+    output_handler.write(jsonpickle.encode(to_save))
+OSError: [Errno 28] No space left on device
+[2023-12-07 22:53:50,534 libutil ERROR] [Errno 28] No space left on device
+[2023-12-07 22:53:50,534 libutil ERROR] An error has occurred, see log file. And contact the developers if needed.
+[2023-12-07 22:53:50,534 libutil INFO] Finished at 07/12/2023 22:53:50. For any help contact us at https://github.com/haddocking/haddock3/issues. Até logo! Au revoir! Tot ziens!.

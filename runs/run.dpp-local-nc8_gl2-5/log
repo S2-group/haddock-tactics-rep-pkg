@@ -1,0 +1,88 @@
+[2023-12-08 19:27:42,572 cli INFO] 
+##############################################
+#                                            #
+#                 HADDOCK 3                  #
+#                                            #
+##############################################
+
+Starting HADDOCK 3.0.0 on 2023-12-08 19:27:00
+
+Python 3.9.18 (main, Sep 11 2023, 13:41:44) 
+[GCC 11.2.0]
+
+[2023-12-08 19:27:46,468 libworkflow INFO] Reading instructions step 0_topoaa
+[2023-12-08 19:27:46,468 libworkflow INFO] Reading instructions step 1_rigidbody
+[2023-12-08 19:27:46,468 libworkflow INFO] Reading instructions step 2_seletop
+[2023-12-08 19:27:46,468 libworkflow INFO] Reading instructions step 3_caprieval
+[2023-12-08 19:27:46,468 libworkflow INFO] Reading instructions step 4_flexref
+[2023-12-08 19:27:46,469 libworkflow INFO] Reading instructions step 5_caprieval
+[2023-12-08 19:27:46,469 libworkflow INFO] Reading instructions step 6_emref
+[2023-12-08 19:27:46,469 libworkflow INFO] Reading instructions step 7_caprieval
+[2023-12-08 19:27:46,588 base_cns_module INFO] Running [topoaa] module
+[2023-12-08 19:27:46,588 __init__ INFO] [topoaa] Molecule 1: e2aP_1F3G.pdb
+[2023-12-08 19:27:46,595 __init__ INFO] [topoaa] Sanitizing molecule e2aP_1F3G.pdb
+[2023-12-08 19:27:46,703 __init__ INFO] [topoaa] Topology CNS input created in e2aP_1F3G.inp
+[2023-12-08 19:27:46,703 __init__ INFO] [topoaa] Molecule 2: hpr_ensemble.pdb
+[2023-12-08 19:27:47,342 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_1.pdb
+[2023-12-08 19:27:47,469 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_1.inp
+[2023-12-08 19:27:47,470 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_2.pdb
+[2023-12-08 19:27:47,560 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_2.inp
+[2023-12-08 19:27:47,560 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_3.pdb
+[2023-12-08 19:27:47,727 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_3.inp
+[2023-12-08 19:27:47,728 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_4.pdb
+[2023-12-08 19:27:47,841 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_4.inp
+[2023-12-08 19:27:47,842 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_5.pdb
+[2023-12-08 19:27:47,997 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_5.inp
+[2023-12-08 19:27:47,997 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_6.pdb
+[2023-12-08 19:27:48,117 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_6.inp
+[2023-12-08 19:27:48,117 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_7.pdb
+[2023-12-08 19:27:48,250 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_7.inp
+[2023-12-08 19:27:48,250 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_8.pdb
+[2023-12-08 19:27:48,361 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_8.inp
+[2023-12-08 19:27:48,361 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_9.pdb
+[2023-12-08 19:27:48,490 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_9.inp
+[2023-12-08 19:27:48,490 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_10.pdb
+[2023-12-08 19:27:48,610 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_10.inp
+[2023-12-08 19:27:48,610 __init__ INFO] [topoaa] Running CNS Jobs n=11
+[2023-12-08 19:27:48,610 libutil INFO] Selected 8 cores to process 11 jobs, with 8 maximum available cores.
+[2023-12-08 19:27:48,610 libparallel INFO] Using 8 cores
+[2023-12-08 19:27:53,488 libparallel INFO] >> /e2aP_1F3G.inp completed 9% 
+[2023-12-08 19:27:53,489 libparallel INFO] >> /hpr_ensemble_1.inp completed 18% 
+[2023-12-08 19:27:53,489 libparallel INFO] >> /hpr_ensemble_2.inp completed 27% 
+[2023-12-08 19:27:53,489 libparallel INFO] >> /hpr_ensemble_3.inp completed 36% 
+[2023-12-08 19:27:53,489 libparallel INFO] >> /hpr_ensemble_4.inp completed 45% 
+[2023-12-08 19:27:53,489 libparallel INFO] >> /hpr_ensemble_5.inp completed 55% 
+[2023-12-08 19:27:53,489 libparallel INFO] >> /hpr_ensemble_6.inp completed 64% 
+[2023-12-08 19:27:53,489 libparallel INFO] >> /hpr_ensemble_7.inp completed 73% 
+[2023-12-08 19:27:53,489 libparallel INFO] >> /hpr_ensemble_8.inp completed 82% 
+[2023-12-08 19:27:53,489 libparallel INFO] >> /hpr_ensemble_9.inp completed 91% 
+[2023-12-08 19:27:53,489 libparallel INFO] >> /hpr_ensemble_10.inp completed 100% 
+[2023-12-08 19:27:53,490 libparallel INFO] 11 tasks finished
+[2023-12-08 19:27:53,490 __init__ INFO] [topoaa] CNS jobs have finished
+[2023-12-08 19:27:53,537 base_cns_module INFO] Module [topoaa] finished.
+[2023-12-08 19:27:53,537 __init__ INFO] [topoaa] took 7 seconds
+[2023-12-08 19:27:54,453 base_cns_module INFO] Running [rigidbody] module
+[2023-12-08 19:27:54,455 __init__ INFO] [rigidbody] crossdock=true
+[2023-12-08 19:27:54,455 __init__ INFO] [rigidbody] Preparing jobs...
+[2023-12-08 19:27:59,215 libutil ERROR] [Errno 28] No space left on device
+Traceback (most recent call last):
+  File "/home/greenBeans/haddock3/src/haddock/libs/libutil.py", line 310, in log_error_and_exit
+    yield
+  File "/home/greenBeans/haddock3/src/haddock/clis/cli.py", line 178, in main
+    workflow.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libworkflow.py", line 38, in run
+    step.execute()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libworkflow.py", line 140, in execute
+    self.module.run()
+  File "/home/greenBeans/haddock3/src/haddock/modules/base_cns_module.py", line 59, in run
+    self._run()
+  File "/home/greenBeans/haddock3/src/haddock/modules/sampling/rigidbody/__init__.py", line 108, in _run
+    inp_file = prepare_cns_input(
+  File "/home/greenBeans/haddock3/src/haddock/libs/libcns.py", line 350, in prepare_cns_input
+    inp_file.write_text(inp)
+  File "/home/greenBeans/anaconda3/envs/haddock3/lib/python3.9/pathlib.py", line 1286, in write_text
+    return f.write(data)
+OSError: [Errno 28] No space left on device
+[2023-12-08 19:27:59,216 libutil ERROR] [Errno 28] No space left on device
+[2023-12-08 19:27:59,216 libutil ERROR] An error has occurred, see log file. And contact the developers if needed.
+[2023-12-08 19:27:59,216 libutil INFO] Finished at 08/12/2023 19:27:59. For any help contact us at https://github.com/haddocking/haddock3/issues. Ciao! Good bye! Tot ziens!.

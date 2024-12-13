@@ -1,0 +1,109 @@
+[2023-11-28 01:36:02,014 cli INFO] 
+##############################################
+#                                            #
+#                 HADDOCK 3                  #
+#                                            #
+##############################################
+
+Starting HADDOCK 3.0.0 on 2023-11-28 01:36:00
+
+Python 3.9.18 (main, Sep 11 2023, 13:41:44) 
+[GCC 11.2.0]
+
+[2023-11-28 01:36:08,291 libworkflow INFO] Reading instructions step 0_topoaa
+[2023-11-28 01:36:08,292 libworkflow INFO] Reading instructions step 1_rigidbody
+[2023-11-28 01:36:08,293 libworkflow INFO] Reading instructions step 2_seletop
+[2023-11-28 01:36:08,293 libworkflow INFO] Reading instructions step 3_caprieval
+[2023-11-28 01:36:08,293 libworkflow INFO] Reading instructions step 4_flexref
+[2023-11-28 01:36:08,294 libworkflow INFO] Reading instructions step 5_caprieval
+[2023-11-28 01:36:08,294 libworkflow INFO] Reading instructions step 6_emref
+[2023-11-28 01:36:08,295 libworkflow INFO] Reading instructions step 7_caprieval
+[2023-11-28 01:36:08,420 base_cns_module INFO] Running [topoaa] module
+[2023-11-28 01:36:08,421 __init__ INFO] [topoaa] Molecule 1: e2aP_1F3G.pdb
+[2023-11-28 01:36:08,429 __init__ INFO] [topoaa] Sanitizing molecule e2aP_1F3G.pdb
+[2023-11-28 01:36:08,601 __init__ INFO] [topoaa] Topology CNS input created in e2aP_1F3G.inp
+[2023-11-28 01:36:08,601 __init__ INFO] [topoaa] Molecule 2: hpr_ensemble.pdb
+[2023-11-28 01:36:09,536 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_1.pdb
+[2023-11-28 01:36:09,672 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_1.inp
+[2023-11-28 01:36:09,672 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_2.pdb
+[2023-11-28 01:36:09,768 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_2.inp
+[2023-11-28 01:36:09,769 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_3.pdb
+[2023-11-28 01:36:09,929 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_3.inp
+[2023-11-28 01:36:09,929 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_4.pdb
+[2023-11-28 01:36:10,134 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_4.inp
+[2023-11-28 01:36:10,134 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_5.pdb
+[2023-11-28 01:36:10,285 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_5.inp
+[2023-11-28 01:36:10,285 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_6.pdb
+[2023-11-28 01:36:10,398 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_6.inp
+[2023-11-28 01:36:10,399 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_7.pdb
+[2023-11-28 01:36:10,531 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_7.inp
+[2023-11-28 01:36:10,531 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_8.pdb
+[2023-11-28 01:36:10,635 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_8.inp
+[2023-11-28 01:36:10,635 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_9.pdb
+[2023-11-28 01:36:10,729 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_9.inp
+[2023-11-28 01:36:10,730 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_10.pdb
+[2023-11-28 01:36:10,836 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_10.inp
+[2023-11-28 01:36:10,836 __init__ INFO] [topoaa] Running CNS Jobs n=11
+[2023-11-28 01:36:10,836 libutil INFO] Selected 4 cores to process 11 jobs, with 32 maximum available cores.
+[2023-11-28 01:36:10,837 libparallel INFO] Using 4 cores
+[2023-11-28 01:36:17,249 libparallel INFO] >> /e2aP_1F3G.inp completed 9% 
+[2023-11-28 01:36:17,251 libparallel INFO] >> /hpr_ensemble_1.inp completed 18% 
+[2023-11-28 01:36:17,251 libparallel INFO] >> /hpr_ensemble_2.inp completed 27% 
+[2023-11-28 01:36:17,251 libparallel INFO] >> /hpr_ensemble_3.inp completed 36% 
+[2023-11-28 01:36:17,251 libparallel INFO] >> /hpr_ensemble_4.inp completed 45% 
+[2023-11-28 01:36:17,251 libparallel INFO] >> /hpr_ensemble_5.inp completed 55% 
+[2023-11-28 01:36:17,252 libparallel INFO] >> /hpr_ensemble_6.inp completed 64% 
+[2023-11-28 01:36:17,252 libparallel INFO] >> /hpr_ensemble_7.inp completed 73% 
+[2023-11-28 01:36:17,252 libparallel INFO] >> /hpr_ensemble_8.inp completed 82% 
+[2023-11-28 01:36:17,252 libparallel INFO] >> /hpr_ensemble_9.inp completed 91% 
+[2023-11-28 01:36:17,252 libparallel INFO] >> /hpr_ensemble_10.inp completed 100% 
+[2023-11-28 01:36:17,252 libparallel INFO] 11 tasks finished
+[2023-11-28 01:36:17,252 __init__ INFO] [topoaa] CNS jobs have finished
+[2023-11-28 01:36:17,352 base_cns_module INFO] Module [topoaa] finished.
+[2023-11-28 01:36:17,352 __init__ INFO] [topoaa] took 9 seconds
+[2023-11-28 01:36:18,500 base_cns_module INFO] Running [rigidbody] module
+[2023-11-28 01:36:18,502 __init__ INFO] [rigidbody] crossdock=true
+[2023-11-28 01:36:18,502 __init__ INFO] [rigidbody] Preparing jobs...
+[2023-11-28 01:37:46,488 __init__ INFO] [rigidbody] Running CNS Jobs n=1000
+[2023-11-28 01:37:46,489 libutil INFO] Selected 4 cores to process 1000 jobs, with 32 maximum available cores.
+[2023-11-28 01:37:46,491 libparallel INFO] Using 4 cores
+[2023-11-28 01:39:52,821 libparallel INFO] >> /rigidbody_1.inp completed 0% 
+[2023-11-28 01:39:52,822 libparallel INFO] >> /rigidbody_2.inp completed 0% 
+[2023-11-28 01:39:52,822 libparallel INFO] >> /rigidbody_3.inp completed 0% 
+[2023-11-28 01:39:52,822 libparallel INFO] >> /rigidbody_4.inp completed 0% 
+[2023-11-28 01:39:52,822 libparallel INFO] >> /rigidbody_5.inp completed 0% 
+[2023-11-28 01:39:52,822 libparallel INFO] >> /rigidbody_6.inp completed 1% 
+[2023-11-28 01:39:52,823 libparallel INFO] >> /rigidbody_7.inp completed 1% 
+[2023-11-28 01:39:52,823 libparallel INFO] >> /rigidbody_8.inp completed 1% 
+[2023-11-28 01:39:52,823 libparallel INFO] >> /rigidbody_9.inp completed 1% 
+[2023-11-28 01:39:52,823 libparallel INFO] >> /rigidbody_10.inp completed 1% 
+[2023-11-28 01:39:52,823 libparallel INFO] >> /rigidbody_11.inp completed 1% 
+[2023-11-28 01:39:52,823 libparallel INFO] >> /rigidbody_12.inp completed 1% 
+[2023-11-28 01:39:52,823 libparallel INFO] >> /rigidbody_13.inp completed 1% 
+[2023-11-28 01:39:52,824 libparallel INFO] >> /rigidbody_14.inp completed 1% 
+[2023-11-28 01:39:52,824 libparallel INFO] >> /rigidbody_15.inp completed 2% 
+[2023-11-28 01:39:52,824 libparallel INFO] >> /rigidbody_16.inp completed 2% 
+[2023-11-28 01:39:52,824 libparallel INFO] >> /rigidbody_17.inp completed 2% 
+[2023-11-28 01:39:52,824 libparallel INFO] >> /rigidbody_18.inp completed 2% 
+[2023-11-28 01:39:52,824 libparallel INFO] >> /rigidbody_19.inp completed 2% 
+[2023-11-28 01:39:52,824 libparallel INFO] >> /rigidbody_20.inp completed 2% 
+[2023-11-28 01:39:52,824 libparallel INFO] >> /rigidbody_21.inp completed 2% 
+[2023-11-28 01:39:52,825 libparallel INFO] >> /rigidbody_22.inp completed 2% 
+[2023-11-28 01:39:52,825 libparallel INFO] >> /rigidbody_23.inp completed 2% 
+[2023-11-28 01:39:52,825 libparallel INFO] >> /rigidbody_24.inp completed 2% 
+[2023-11-28 01:39:52,825 libparallel INFO] >> /rigidbody_25.inp completed 2% 
+[2023-11-28 01:39:52,825 libparallel INFO] >> /rigidbody_26.inp completed 3% 
+[2023-11-28 01:39:52,825 libparallel INFO] >> /rigidbody_27.inp completed 3% 
+[2023-11-28 01:39:52,825 libparallel INFO] >> /rigidbody_28.inp completed 3% 
+[2023-11-28 01:39:52,825 libparallel INFO] >> /rigidbody_29.inp completed 3% 
+[2023-11-28 01:39:52,826 libparallel INFO] >> /rigidbody_30.inp completed 3% 
+[2023-11-28 01:39:52,826 libparallel INFO] >> /rigidbody_31.inp completed 3% 
+[2023-11-28 01:39:52,826 libparallel INFO] >> /rigidbody_32.inp completed 3% 
+[2023-11-28 01:39:52,826 libparallel INFO] >> /rigidbody_33.inp completed 3% 
+[2023-11-28 01:39:52,826 libparallel INFO] >> /rigidbody_34.inp completed 3% 
+[2023-11-28 01:39:52,826 libparallel INFO] >> /rigidbody_35.inp completed 4% 
+[2023-11-28 01:39:52,826 libparallel INFO] >> /rigidbody_36.inp completed 4% 
+[2023-11-28 01:39:52,826 libparallel INFO] >> /rigidbody_37.inp completed 4% 
+[2023-11-28 01:39:52,827 libparallel INFO] >> /rigidbody_38.inp completed 4% 
+[2023-11-28 01:39:52,827 libparallel INFO] >> /rigidbody_39.inp completed 4% 
+[2023-11-28 01:39:52,827 libparal

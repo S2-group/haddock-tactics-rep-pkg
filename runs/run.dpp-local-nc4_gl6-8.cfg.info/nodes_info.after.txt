@@ -1,0 +1,54 @@
+NodeName=GreenLab-STF Arch=x86_64 CoresPerSocket=4 
+   CPUAlloc=4 CPUEfctv=8 CPUTot=8 CPULoad=4.12
+   AvailableFeatures=(null)
+   ActiveFeatures=(null)
+   Gres=(null)
+   NodeAddr=145.108.225.7 NodeHostName=GreenLab-STF Version=23.02.4
+   OS=Linux 5.15.0-84-generic #93-Ubuntu SMP Tue Sep 5 17:16:10 UTC 2023 
+   RealMemory=32000 AllocMem=32000 FreeMem=360 Sockets=1 Boards=1
+   State=MIXED ThreadsPerCore=2 TmpDisk=0 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=singleNodePartition 
+   BootTime=2023-09-23T17:06:20 SlurmdStartTime=2023-10-23T13:29:38
+   LastBusyTime=2023-12-15T12:21:43 ResumeAfterTime=None
+   CfgTRES=cpu=8,mem=32000M,billing=8
+   AllocTRES=cpu=4,mem=32000M
+   CapWatts=n/a
+   CurrentWatts=50 AveWatts=1
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+
+NodeName=gl5 Arch=x86_64 CoresPerSocket=8 
+   CPUAlloc=8 CPUEfctv=32 CPUTot=32 CPULoad=8.51
+   AvailableFeatures=(null)
+   ActiveFeatures=(null)
+   Gres=(null)
+   NodeAddr=145.108.225.16 NodeHostName=gl5 Version=23.02.4
+   OS=Linux 5.15.0-84-generic #93-Ubuntu SMP Tue Sep 5 17:16:10 UTC 2023 
+   RealMemory=376000 AllocMem=376000 FreeMem=266123 Sockets=2 Boards=1
+   State=MIXED ThreadsPerCore=2 TmpDisk=0 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=singleNodePartition 
+   BootTime=2023-09-27T09:44:44 SlurmdStartTime=2023-10-23T13:29:59
+   LastBusyTime=2023-12-15T14:02:11 ResumeAfterTime=None
+   CfgTRES=cpu=32,mem=376000M,billing=32
+   AllocTRES=cpu=8,mem=376000M
+   CapWatts=n/a
+   CurrentWatts=117 AveWatts=15
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+
+NodeName=gl6 Arch=x86_64 CoresPerSocket=8 
+   CPUAlloc=2 CPUEfctv=32 CPUTot=32 CPULoad=4.05
+   AvailableFeatures=(null)
+   ActiveFeatures=(null)
+   Gres=(null)
+   NodeAddr=145.108.225.17 NodeHostName=gl6 Version=23.02.4
+   OS=Linux 5.15.0-87-generic #97-Ubuntu SMP Mon Oct 2 21:09:21 UTC 2023 
+   RealMemory=376000 AllocMem=376000 FreeMem=113731 Sockets=2 Boards=1
+   State=MIXED ThreadsPerCore=2 TmpDisk=0 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=singleNodePartition 
+   BootTime=2023-10-24T15:47:11 SlurmdStartTime=2023-10-24T16:13:52
+   LastBusyTime=2023-12-15T17:18:20 ResumeAfterTime=None
+   CfgTRES=cpu=32,mem=376000M,billing=32
+   AllocTRES=cpu=2,mem=376000M
+   CapWatts=n/a
+   CurrentWatts=92 AveWatts=14
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+

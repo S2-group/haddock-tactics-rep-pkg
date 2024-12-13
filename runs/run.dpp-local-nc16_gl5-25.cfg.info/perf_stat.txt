@@ -1,0 +1,9 @@
+Start hardware data collection
+
+ Performance counter stats for 'system wide':
+
+             13.10 Joules power/energy-pkg/                                           
+              0.13 Joules power/energy-ram/                                           
+
+       0.534843918 seconds time elapsed
+

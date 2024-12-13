@@ -1,0 +1,87 @@
+Start hardware data collection
+Process Worker-16:
+Traceback (most recent call last):
+  File "/home/greenBeans/anaconda3/envs/haddock3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libparallel.py", line 28, in run
+    task.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libsubprocess.py", line 192, in run
+    p.kill()
+OSError: [Errno 28] No space left on device
+Process Worker-17:
+Traceback (most recent call last):
+  File "/home/greenBeans/anaconda3/envs/haddock3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libparallel.py", line 28, in run
+    task.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libsubprocess.py", line 192, in run
+    p.kill()
+OSError: [Errno 28] No space left on device
+Process Worker-18:
+Traceback (most recent call last):
+  File "/home/greenBeans/anaconda3/envs/haddock3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libparallel.py", line 28, in run
+    task.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libsubprocess.py", line 192, in run
+    p.kill()
+OSError: [Errno 28] No space left on device
+Process Worker-23:
+Traceback (most recent call last):
+  File "/home/greenBeans/anaconda3/envs/haddock3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libparallel.py", line 28, in run
+    task.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libsubprocess.py", line 192, in run
+    p.kill()
+OSError: [Errno 28] No space left on device
+Process Worker-24:
+Traceback (most recent call last):
+  File "/home/greenBeans/anaconda3/envs/haddock3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libparallel.py", line 28, in run
+    task.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libsubprocess.py", line 192, in run
+    p.kill()
+OSError: [Errno 28] No space left on device
+Process Worker-12:
+Traceback (most recent call last):
+  File "/home/greenBeans/anaconda3/envs/haddock3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libparallel.py", line 28, in run
+    task.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libsubprocess.py", line 192, in run
+    p.kill()
+OSError: [Errno 28] No space left on device
+Process Worker-25:
+Process Worker-27:
+Traceback (most recent call last):
+  File "/home/greenBeans/anaconda3/envs/haddock3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libparallel.py", line 28, in run
+    task.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libsubprocess.py", line 192, in run
+    p.kill()
+OSError: [Errno 28] No space left on device
+Traceback (most recent call last):
+  File "/home/greenBeans/anaconda3/envs/haddock3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libparallel.py", line 28, in run
+    task.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libsubprocess.py", line 192, in run
+    p.kill()
+OSError: [Errno 28] No space left on device
+Process Worker-20:
+Traceback (most recent call last):
+  File "/home/greenBeans/anaconda3/envs/haddock3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libparallel.py", line 28, in run
+    task.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libsubprocess.py", line 192, in run
+    p.kill()
+OSError: [Errno 28] No space left on device
+Process Worker-22:
+Traceback (most recent call last):
+  File "/home/greenBeans/anaconda3/envs/haddock3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/greenBeans/had

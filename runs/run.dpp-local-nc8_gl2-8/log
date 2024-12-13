@@ -1,0 +1,56 @@
+[2023-12-07 18:25:19,945 cli INFO] 
+##############################################
+#                                            #
+#                 HADDOCK 3                  #
+#                                            #
+##############################################
+
+Starting HADDOCK 3.0.0 on 2023-12-07 18:25:00
+
+Python 3.9.18 (main, Sep 11 2023, 13:41:44) 
+[GCC 11.2.0]
+
+[2023-12-07 18:25:23,853 libworkflow INFO] Reading instructions step 0_topoaa
+[2023-12-07 18:25:23,854 libworkflow INFO] Reading instructions step 1_rigidbody
+[2023-12-07 18:25:23,854 libworkflow INFO] Reading instructions step 2_seletop
+[2023-12-07 18:25:23,854 libworkflow INFO] Reading instructions step 3_caprieval
+[2023-12-07 18:25:23,854 libworkflow INFO] Reading instructions step 4_flexref
+[2023-12-07 18:25:23,854 libworkflow INFO] Reading instructions step 5_caprieval
+[2023-12-07 18:25:23,854 libworkflow INFO] Reading instructions step 6_emref
+[2023-12-07 18:25:23,854 libworkflow INFO] Reading instructions step 7_caprieval
+[2023-12-07 18:25:23,963 base_cns_module INFO] Running [topoaa] module
+[2023-12-07 18:25:23,963 __init__ INFO] [topoaa] Molecule 1: e2aP_1F3G.pdb
+[2023-12-07 18:25:23,970 __init__ INFO] [topoaa] Sanitizing molecule e2aP_1F3G.pdb
+[2023-12-07 18:25:24,201 __init__ INFO] [topoaa] Topology CNS input created in e2aP_1F3G.inp
+[2023-12-07 18:25:24,202 __init__ INFO] [topoaa] Molecule 2: hpr_ensemble.pdb
+[2023-12-07 18:25:24,898 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_1.pdb
+[2023-12-07 18:25:25,081 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_1.inp
+[2023-12-07 18:25:25,081 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_2.pdb
+[2023-12-07 18:25:25,313 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_2.inp
+[2023-12-07 18:25:25,313 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_3.pdb
+[2023-12-07 18:25:25,495 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_3.inp
+[2023-12-07 18:25:25,495 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_4.pdb
+[2023-12-07 18:25:25,703 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_4.inp
+[2023-12-07 18:25:25,704 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_5.pdb
+[2023-12-07 18:25:25,878 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_5.inp
+[2023-12-07 18:25:25,879 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_6.pdb
+[2023-12-07 18:25:26,127 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_6.inp
+[2023-12-07 18:25:26,127 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_7.pdb
+[2023-12-07 18:25:26,351 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_7.inp
+[2023-12-07 18:25:26,351 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_8.pdb
+[2023-12-07 18:25:26,536 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_8.inp
+[2023-12-07 18:25:26,536 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_9.pdb
+[2023-12-07 18:25:26,747 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_9.inp
+[2023-12-07 18:25:26,747 __init__ INFO] [topoaa] Sanitizing molecule hpr_ensemble_10.pdb
+[2023-12-07 18:25:26,939 __init__ INFO] [topoaa] Topology CNS input created in hpr_ensemble_10.inp
+[2023-12-07 18:25:26,940 __init__ INFO] [topoaa] Running CNS Jobs n=11
+[2023-12-07 18:25:26,940 libutil INFO] Selected 8 cores to process 11 jobs, with 8 maximum available cores.
+[2023-12-07 18:25:26,940 libparallel INFO] Using 8 cores
+[2023-12-07 18:25:30,048 libparallel INFO] >> /e2aP_1F3G.inp completed 9% 
+[2023-12-07 18:25:30,048 libparallel INFO] >> /hpr_ensemble_1.inp completed 18% 
+[2023-12-07 18:25:30,048 libparallel INFO] >> /hpr_ensemble_2.inp completed 27% 
+[2023-12-07 18:25:30,048 libparallel INFO] >> /hpr_ensemble_3.inp completed 36% 
+[2023-12-07 18:25:30,666 libparallel INFO] >> /hpr_ensemble_4.inp completed 45% 
+[2023-12-07 18:25:30,666 libparallel INFO] >> /hpr_ensemble_5.inp completed 55% 
+[2023-12-07 18:25:30,666 libparallel INFO] >> /hpr_ensemble_6.inp completed 64% 
+[2023-12-07 18:25:30,6

@@ -1,0 +1,13 @@
+[2024-01-17 14:47:52,282 cli INFO] 
+##############################################
+#                                            #
+#                 HADDOCK 3                  #
+#                                            #
+##############################################
+
+Starting HADDOCK 3.0.0 on 2024-01-17 14:47:00
+
+Python 3.9.18 (main, Sep 11 2023, 13:41:44) 
+[GCC 11.2.0]
+
+[2024-01-17 14:47:52,312 prepare_run INFO] The 'run_dir' 'run.dpp-local-nc4_gl6-40' exists and is not empty. We can't work on it unless you provide the `--restart` option. If you want to start a run from scratch, indicate a new folder, or manually delete this one first, or use `--restart 0`.

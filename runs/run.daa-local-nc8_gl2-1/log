@@ -1,0 +1,65 @@
+[2023-12-02 11:01:11,647 cli INFO] 
+##############################################
+#                                            #
+#                 HADDOCK 3                  #
+#                                            #
+##############################################
+
+Starting HADDOCK 3.0.0 on 2023-12-02 11:01:00
+
+Python 3.9.18 (main, Sep 11 2023, 13:41:44) 
+[GCC 11.2.0]
+
+[2023-12-02 11:01:16,984 libworkflow INFO] Reading instructions step 0_topoaa
+[2023-12-02 11:01:16,984 libworkflow INFO] Reading instructions step 1_rigidbody
+[2023-12-02 11:01:16,984 libworkflow INFO] Reading instructions step 2_caprieval
+[2023-12-02 11:01:16,985 libworkflow INFO] Reading instructions step 3_seletop
+[2023-12-02 11:01:16,985 libworkflow INFO] Reading instructions step 4_caprieval
+[2023-12-02 11:01:16,985 libworkflow INFO] Reading instructions step 5_flexref
+[2023-12-02 11:01:16,985 libworkflow INFO] Reading instructions step 6_caprieval
+[2023-12-02 11:01:16,985 libworkflow INFO] Reading instructions step 7_emref
+[2023-12-02 11:01:16,985 libworkflow INFO] Reading instructions step 8_caprieval
+[2023-12-02 11:01:16,985 libworkflow INFO] Reading instructions step 9_clustfcc
+[2023-12-02 11:01:16,985 libworkflow INFO] Reading instructions step 10_seletopclusts
+[2023-12-02 11:01:16,985 libworkflow INFO] Reading instructions step 11_caprieval
+[2023-12-02 11:01:17,090 base_cns_module INFO] Running [topoaa] module
+[2023-12-02 11:01:17,091 __init__ INFO] [topoaa] Molecule 1: 4G6K_fv.pdb
+[2023-12-02 11:01:17,097 __init__ INFO] [topoaa] Sanitizing molecule 4G6K_fv.pdb
+[2023-12-02 11:01:17,232 __init__ INFO] [topoaa] Topology CNS input created in 4G6K_fv.inp
+[2023-12-02 11:01:17,233 __init__ INFO] [topoaa] Molecule 2: 4I1B-matched.pdb
+[2023-12-02 11:01:17,238 __init__ INFO] [topoaa] Sanitizing molecule 4I1B-matched.pdb
+[2023-12-02 11:01:17,365 __init__ INFO] [topoaa] Topology CNS input created in 4I1B-matched.inp
+[2023-12-02 11:01:17,365 __init__ INFO] [topoaa] Running CNS Jobs n=2
+[2023-12-02 11:01:17,365 libutil INFO] Selected 2 cores to process 2 jobs, with 8 maximum available cores.
+[2023-12-02 11:01:17,365 libparallel INFO] Using 2 cores
+[2023-12-02 11:01:21,851 libparallel INFO] >> /4G6K_fv.inp completed 50% 
+[2023-12-02 11:01:21,852 libparallel INFO] >> /4I1B-matched.inp completed 100% 
+[2023-12-02 11:01:21,852 libparallel INFO] 2 tasks finished
+[2023-12-02 11:01:21,852 __init__ INFO] [topoaa] CNS jobs have finished
+[2023-12-02 11:01:21,924 base_cns_module INFO] Module [topoaa] finished.
+[2023-12-02 11:01:21,924 __init__ INFO] [topoaa] took 5 seconds
+[2023-12-02 11:01:22,909 base_cns_module INFO] Running [rigidbody] module
+[2023-12-02 11:01:22,910 __init__ INFO] [rigidbody] crossdock=true
+[2023-12-02 11:01:22,911 __init__ INFO] [rigidbody] Preparing jobs...
+[2023-12-02 11:01:40,081 libutil ERROR] [Errno 28] No space left on device
+Traceback (most recent call last):
+  File "/home/greenBeans/haddock3/src/haddock/libs/libutil.py", line 310, in log_error_and_exit
+    yield
+  File "/home/greenBeans/haddock3/src/haddock/clis/cli.py", line 178, in main
+    workflow.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libworkflow.py", line 38, in run
+    step.execute()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libworkflow.py", line 140, in execute
+    self.module.run()
+  File "/home/greenBeans/haddock3/src/haddock/modules/base_cns_module.py", line 59, in run
+    self._run()
+  File "/home/greenBeans/haddock3/src/haddock/modules/sampling/rigidbody/__init__.py", line 108, in _run
+    inp_file = prepare_cns_input(
+  File "/home/greenBeans/haddock3/src/haddock/libs/libcns.py", line 350, in prepare_cns_input
+    inp_file.write_text(inp)
+  File "/home/greenBeans/anaconda3/envs/haddock3/lib/python3.9/pathlib.py", line 1286, in write_text
+    return f.write(data)
+OSError: [Errno 28] No space left on device
+[2023-12-02 11:01:40,403 libutil ERROR] [Errno 28] No space left on device
+[2023-12-02 11:01:40,403 libutil ERROR] An error has occurred, see log file. And contact the developers if needed.
+[2023-12-02 11:01:40,403 libutil INFO] Finished at 0

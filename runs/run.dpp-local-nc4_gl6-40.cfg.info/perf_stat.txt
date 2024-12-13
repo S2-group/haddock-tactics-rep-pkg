@@ -1,0 +1,9 @@
+Finished at 17/01/2024 14:47:52. For any help contact us at https://github.com/haddocking/haddock3/issues. Ciao! Good bye! Tot ziens!.
+
+ Performance counter stats for 'system wide':
+
+             59.72 Joules power/energy-pkg/                                           
+              6.72 Joules power/energy-ram/                                           
+
+       0.863022906 seconds time elapsed
+

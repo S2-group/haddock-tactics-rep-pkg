@@ -1,0 +1,73 @@
+NodeName=GreenLab-STF Arch=x86_64 CoresPerSocket=4 
+   CPUAlloc=0 CPUEfctv=8 CPUTot=8 CPULoad=0.02
+   AvailableFeatures=(null)
+   ActiveFeatures=(null)
+   Gres=(null)
+   NodeAddr=145.108.225.7 NodeHostName=GreenLab-STF Version=23.02.4
+   OS=Linux 5.15.0-84-generic #93-Ubuntu SMP Tue Sep 5 17:16:10 UTC 2023 
+   RealMemory=32000 AllocMem=0 FreeMem=389 Sockets=1 Boards=1
+   State=IDLE ThreadsPerCore=2 TmpDisk=0 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=singleNodePartition 
+   BootTime=2023-09-23T17:06:20 SlurmdStartTime=2023-12-22T14:31:42
+   LastBusyTime=2024-01-22T10:55:37 ResumeAfterTime=None
+   CfgTRES=cpu=8,mem=32000M,billing=8
+   AllocTRES=
+   CapWatts=n/a
+   CurrentWatts=4 AveWatts=2
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+
+NodeName=gl5 Arch=x86_64 CoresPerSocket=8 
+   CPUAlloc=2 CPUEfctv=32 CPUTot=32 CPULoad=8.08
+   AvailableFeatures=(null)
+   ActiveFeatures=(null)
+   Gres=(null)
+   NodeAddr=145.108.225.16 NodeHostName=gl5 Version=23.02.4
+   OS=Linux 5.15.0-91-generic #101-Ubuntu SMP Tue Nov 14 13:30:08 UTC 2023 
+   RealMemory=376000 AllocMem=376000 FreeMem=347688 Sockets=2 Boards=1
+   State=MIXED ThreadsPerCore=2 TmpDisk=0 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=singleNodePartition 
+   BootTime=2024-01-18T00:24:40 SlurmdStartTime=2024-01-18T15:18:50
+   LastBusyTime=2024-01-22T15:01:39 ResumeAfterTime=None
+   CfgTRES=cpu=32,mem=376000M,billing=32
+   AllocTRES=cpu=2,mem=376000M
+   CapWatts=n/a
+   CurrentWatts=21 AveWatts=16
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+
+NodeName=gl6 Arch=x86_64 CoresPerSocket=8 
+   CPUAlloc=0 CPUEfctv=32 CPUTot=32 CPULoad=0.01
+   AvailableFeatures=(null)
+   ActiveFeatures=(null)
+   Gres=(null)
+   NodeAddr=145.108.225.17 NodeHostName=gl6 Version=23.02.4
+   OS=Linux 5.15.0-87-generic #97-Ubuntu SMP Mon Oct 2 21:09:21 UTC 2023 
+   RealMemory=376000 AllocMem=0 FreeMem=24927 Sockets=2 Boards=1
+   State=IDLE+DRAIN ThreadsPerCore=2 TmpDisk=0 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=singleNodePartition 
+   BootTime=2023-10-24T15:47:11 SlurmdStartTime=2023-12-22T14:38:15
+   LastBusyTime=2024-01-22T12:51:13 ResumeAfterTime=None
+   CfgTRES=cpu=32,mem=376000M,billing=32
+   AllocTRES=
+   CapWatts=n/a
+   CurrentWatts=18 AveWatts=15
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   Reason=Duplicate jobid [slurm@2024-01-22T12:51:13]
+
+NodeName=superserver2 Arch=x86_64 CoresPerSocket=8 
+   CPUAlloc=4 CPUEfctv=32 CPUTot=32 CPULoad=4.10
+   AvailableFeatures=(null)
+   ActiveFeatures=(null)
+   Gres=(null)
+   NodeAddr=145.108.225.14 NodeHostName=superserver2 Version=23.02.7
+   OS=Linux 5.15.30-2-pve #1 SMP PVE 5.15.30-3 (Fri, 22 Apr 2022 18:08:27 +0200) 
+   RealMemory=376000 AllocMem=376000 FreeMem=351906 Sockets=2 Boards=1
+   State=MIXED ThreadsPerCore=2 TmpDisk=0 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=singleNodePartition 
+   BootTime=2024-01-03T16:32:30 SlurmdStartTime=2024-01-03T16:32:51
+   LastBusyTime=2024-01-22T13:35:31 ResumeAfterTime=None
+   CfgTRES=cpu=32,mem=376000M,billing=32
+   AllocTRES=cpu=4,mem=376000M
+   CapWatts=n/a
+   CurrentWatts=n/s AveWatts=n/s
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+

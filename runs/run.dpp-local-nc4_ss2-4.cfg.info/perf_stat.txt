@@ -1,0 +1,79 @@
+Start hardware data collection
+Process Worker-7:
+Traceback (most recent call last):
+  File "/home/greenBeans/anaconda3/envs/haddock3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libparallel.py", line 28, in run
+    task.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libsubprocess.py", line 198, in run
+    gzip_files(self.output_file, remove_original=True)
+  File "/home/greenBeans/haddock3/src/haddock/libs/libio.py", line 330, in gzip_files
+    content = fin.read(block_size)
+  File "/home/greenBeans/anaconda3/envs/haddock3/lib/python3.9/gzip.py", line 343, in close
+    myfileobj.close()
+OSError: [Errno 28] No space left on device
+Process Worker-5:
+Traceback (most recent call last):
+  File "/home/greenBeans/anaconda3/envs/haddock3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libparallel.py", line 28, in run
+    task.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libsubprocess.py", line 198, in run
+    gzip_files(self.output_file, remove_original=True)
+  File "/home/greenBeans/haddock3/src/haddock/libs/libio.py", line 330, in gzip_files
+    content = fin.read(block_size)
+  File "/home/greenBeans/anaconda3/envs/haddock3/lib/python3.9/gzip.py", line 343, in close
+    myfileobj.close()
+OSError: [Errno 28] No space left on device
+Process Worker-6:
+Traceback (most recent call last):
+  File "/home/greenBeans/anaconda3/envs/haddock3/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libparallel.py", line 28, in run
+    task.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libsubprocess.py", line 192, in run
+    p.kill()
+OSError: [Errno 28] No space left on device
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/greenBeans/anaconda3/envs/haddock3/lib/python3.9/logging/__init__.py", line 1087, in emit
+    self.flush()
+  File "/home/greenBeans/anaconda3/envs/haddock3/lib/python3.9/logging/__init__.py", line 1067, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/home/greenBeans/anaconda3/envs/haddock3/bin/haddock3", line 33, in <module>
+    sys.exit(load_entry_point('haddock3', 'console_scripts', 'haddock3')())
+  File "/home/greenBeans/haddock3/src/haddock/clis/cli.py", line 67, in maincli
+    cli(ap, main)
+  File "/home/greenBeans/haddock3/src/haddock/clis/cli.py", line 62, in cli
+    main(**vars(cmd))
+  File "/home/greenBeans/haddock3/src/haddock/clis/cli.py", line 178, in main
+    workflow.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libworkflow.py", line 38, in run
+    step.execute()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libworkflow.py", line 140, in execute
+    self.module.run()
+  File "/home/greenBeans/haddock3/src/haddock/modules/base_cns_module.py", line 59, in run
+    self._run()
+  File "/home/greenBeans/haddock3/src/haddock/modules/sampling/rigidbody/__init__.py", line 139, in _run
+    engine.run()
+  File "/home/greenBeans/haddock3/src/haddock/libs/libparallel.py", line 113, in run
+    log.info(f'>> {task_ident} completed {per:.0f}% ')
+Message: '>> /rigidbody_251.inp completed 25% '
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/greenBeans/anaconda3/envs/haddock3/lib/python3.9/logging/__init__.py", line 1087, in emit
+    self.flush()
+  File "/home/greenBeans/anaconda3/envs/haddock3/lib/python3.9/logging/__init__.py", line 1067, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/home/greenBeans/anaconda3/envs/haddock3/bin/haddock3", line 33, in <module>
+    sys.exit(load_entry_point('haddock3', 'console_scripts', 'haddock3')())
+  File "/home/greenBeans/haddock3/src/haddock/clis/cli.py", line 67, in maincli
+    cli(ap, main)
+  File "/home/greenBeans/haddock3/src/haddock/clis/cli.py", line 62, in cli
+    main(**vars(cmd))
+  File "/home/greenBeans/haddock3/src/haddock/cl

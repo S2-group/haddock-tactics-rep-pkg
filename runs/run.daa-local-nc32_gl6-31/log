@@ -1,0 +1,60 @@
+[2024-01-22 06:43:46,293 cli INFO] 
+##############################################
+#                                            #
+#                 HADDOCK 3                  #
+#                                            #
+##############################################
+
+Starting HADDOCK 3.0.0 on 2024-01-22 06:43:00
+
+Python 3.9.18 (main, Sep 11 2023, 13:41:44) 
+[GCC 11.2.0]
+
+[2024-01-22 06:43:54,103 libworkflow INFO] Reading instructions step 0_topoaa
+[2024-01-22 06:43:54,103 libworkflow INFO] Reading instructions step 1_rigidbody
+[2024-01-22 06:43:54,103 libworkflow INFO] Reading instructions step 2_caprieval
+[2024-01-22 06:43:54,104 libworkflow INFO] Reading instructions step 3_seletop
+[2024-01-22 06:43:54,104 libworkflow INFO] Reading instructions step 4_caprieval
+[2024-01-22 06:43:54,104 libworkflow INFO] Reading instructions step 5_flexref
+[2024-01-22 06:43:54,104 libworkflow INFO] Reading instructions step 6_caprieval
+[2024-01-22 06:43:54,104 libworkflow INFO] Reading instructions step 7_emref
+[2024-01-22 06:43:54,105 libworkflow INFO] Reading instructions step 8_caprieval
+[2024-01-22 06:43:54,105 libworkflow INFO] Reading instructions step 9_clustfcc
+[2024-01-22 06:43:54,105 libworkflow INFO] Reading instructions step 10_seletopclusts
+[2024-01-22 06:43:54,105 libworkflow INFO] Reading instructions step 11_caprieval
+[2024-01-22 06:43:54,265 base_cns_module INFO] Running [topoaa] module
+[2024-01-22 06:43:54,266 __init__ INFO] [topoaa] Molecule 1: 4G6K_fv.pdb
+[2024-01-22 06:43:54,273 __init__ INFO] [topoaa] Sanitizing molecule 4G6K_fv.pdb
+[2024-01-22 06:43:54,512 __init__ INFO] [topoaa] Topology CNS input created in 4G6K_fv.inp
+[2024-01-22 06:43:54,512 __init__ INFO] [topoaa] Molecule 2: 4I1B-matched.pdb
+[2024-01-22 06:43:54,519 __init__ INFO] [topoaa] Sanitizing molecule 4I1B-matched.pdb
+[2024-01-22 06:43:54,796 __init__ INFO] [topoaa] Topology CNS input created in 4I1B-matched.inp
+[2024-01-22 06:43:54,797 __init__ INFO] [topoaa] Running CNS Jobs n=2
+[2024-01-22 06:43:54,797 libutil INFO] Selected 2 cores to process 2 jobs, with 32 maximum available cores.
+[2024-01-22 06:43:54,797 libparallel INFO] Using 2 cores
+[2024-01-22 06:43:59,968 libparallel INFO] >> /4G6K_fv.inp completed 50% 
+[2024-01-22 06:43:59,970 libparallel INFO] >> /4I1B-matched.inp completed 100% 
+[2024-01-22 06:43:59,970 libparallel INFO] 2 tasks finished
+[2024-01-22 06:43:59,970 __init__ INFO] [topoaa] CNS jobs have finished
+[2024-01-22 06:44:00,022 base_cns_module INFO] Module [topoaa] finished.
+[2024-01-22 06:44:00,022 __init__ INFO] [topoaa] took 6 seconds
+[2024-01-22 06:44:01,109 base_cns_module INFO] Running [rigidbody] module
+[2024-01-22 06:44:01,110 __init__ INFO] [rigidbody] crossdock=true
+[2024-01-22 06:44:01,111 __init__ INFO] [rigidbody] Preparing jobs...
+[2024-01-22 06:55:59,660 __init__ INFO] [rigidbody] Running CNS Jobs n=10000
+[2024-01-22 06:55:59,661 libutil INFO] Selected 32 cores to process 10000 jobs, with 32 maximum available cores.
+[2024-01-22 06:55:59,748 libparallel INFO] Using 32 cores
+[2024-01-22 07:54:14,734 libparallel INFO] >> /rigidbody_1.inp completed 0% 
+[2024-01-22 07:54:14,735 libparallel INFO] >> /rigidbody_2.inp completed 0% 
+[2024-01-22 07:54:14,740 libparallel INFO] >> /rigidbody_3.inp completed 0% 
+[2024-01-22 07:54:14,741 libparallel INFO] >> /rigidbody_4.inp completed 0% 
+[2024-01-22 07:54:14,741 libparallel INFO] >> /rigidbody_5.inp completed 0% 
+[2024-01-22 07:54:14,741 libparallel INFO] >> /rigidbody_6.inp completed 0% 
+[2024-01-22 07:54:14,741 libparallel INFO] >> /rigidbody_7.inp completed 0% 
+[2024-01-22 07:54:14,741 libparallel INFO] >> /rigidbody_8.inp completed 0% 
+[2024-01-22 07:54:14,741 libparallel INFO] >> /rigidbody_9.inp completed 0% 
+[2024-01-22 07:54:14,741 libparallel INFO] >> /rigidbody_10.inp completed 0% 
+[2024-01-22 07:54:14,741 libparallel INFO] >> /rigidbody_11.inp completed 0% 
+[2024-01-22 07:54:14,741 libparallel INFO] >> /rigidbody_12.inp completed 0% 
+[2024-01-22 07:54:14,741 libparallel INFO] >> /rigidbody_13.inp completed 0% 
+[2024-01-22 07:54:14,741 libparallel INFO] >> /rigidbo
