@@ -5,7 +5,7 @@ sns.set(rc={"figure.dpi":300, 'savefig.dpi':300})
 sns.set_style('white')
 
 def show_boxplot(data, title, metric, x_label = "", y_label = "", store=False):
-    fig, ax = plt.subplots(figsize=(15, 10))
+    fig, ax = plt.subplots(figsize=(10, 8))
     PROPS = {
         'boxprops':{'facecolor':'none', 'edgecolor':'red'},
         'medianprops':{'color':'green'},
@@ -36,6 +36,10 @@ def show_boxplot(data, title, metric, x_label = "", y_label = "", store=False):
                   color="red",
                   ax=ax)
 
+
+    medians = data.groupby('NCPUS')[metric].median()
+    ax.plot(range(len(medians)), medians.values, color='orange', linestyle='-', linewidth=3, marker='o', zorder=10)
+
     # Customize the plot
     #ax.set_title(title)
     ax.set_xlabel(x_label)
@@ -43,7 +47,7 @@ def show_boxplot(data, title, metric, x_label = "", y_label = "", store=False):
 
     if store:
         plt.savefig(
-            f'{title}.png', dpi=300, bbox_inches='tight'
+            f'{title}.pdf', dpi=300, bbox_inches='tight'
         )
 
     # Display the plot
