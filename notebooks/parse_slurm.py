@@ -90,7 +90,13 @@ def get_data(data, workflow="daa"):
     })
 
 def get_group(data, workflow="daa", ncpus=4):
+    return data[(data["NCPUS"] == str(ncpus)) & (data['Workflow'] == workflow)]
+
+def get_cpus(data, ncpus=4):
     return data[data["NCPUS"] == ncpus]
+
+def get_node(data, node='gl5'):
+    return data[data.iloc[:, 3] == node]
 
 # remove outliers for each number of vCPUS
 def remove_outliers_cpus(data, threshold=1, column='Elapsed'):
