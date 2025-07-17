@@ -6,13 +6,32 @@ sns.set_style('white')
 
 def show_boxplot(data, title, metric, x_label = "", y_label = "", store=False):
     fig, ax = plt.subplots(figsize=(10, 8))
+#    PROPS = {
+#        'boxprops':{'facecolor':'none', 'edgecolor':'red'},
+#        'medianprops':{'color':'green'},
+#        'whiskerprops':{'color':'blue'},
+#        'capprops':{'color':'magenta'}
+#    }
+    #PROPS = {
+    #    'boxprops':{'facecolor': 'none', 'edgecolor':'gray'},
+    #    'medianprops':{'color':'gray'},
+    #    'whiskerprops':{'color':'gray'},
+    #    'capprops':{'color':'gray'}
+    #}
+
     PROPS = {
         'boxprops': {'facecolor': 'none', 'edgecolor': (0.1, 0.1, 0.1, 0.3)},
         'medianprops': {'color': (0.1, 0.1, 0.1, 0.3)},
         'whiskerprops': {'color': (0.1, 0.1, 0.1, 0.3)},
-        'capprops': {'color': (0.1, 0.1, 0.1, 0.3)},
-        'flierprops': {'marker': 'o', 'color': 'black', 'alpha': 0.5}
+        'capprops': {'color': (0.1, 0.1, 0.1, 0.3)}
     }
+    
+    #sns.boxplot(x='NCPUS',y=metric,
+    #            data=data,
+    #            showfliers=False,
+    #            linewidth=1.5,
+    #            ax=ax,
+    #            **PROPS)
 
     sns.violinplot(x='NCPUS',y=metric,
                 data=data,
@@ -21,9 +40,16 @@ def show_boxplot(data, title, metric, x_label = "", y_label = "", store=False):
                 inner="quart",
                 linewidth=2,
                 width=1.1,
-                density_norm='count',
+                density_norm='count'
     )
-
+    
+    sns.boxplot(x='NCPUS', y=metric,
+                data=data,
+                showfliers=False,
+                linewidth=1.5,
+                ax=ax,
+                **PROPS)
+ 
     sns.swarmplot(x='NCPUS', y=metric,
                   data=data,
                   #color=".25",

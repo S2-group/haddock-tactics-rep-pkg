@@ -83,14 +83,14 @@ def extract_workflow(df):
 
     return batches.rename(columns={'JobName': 'Workflow'})
 
-#def parse(path):
-#    df = pd.read_csv(path, header=None, delimiter=r"\s+")
-#    df.columns =  list(df.loc[0]) # set headers
-#    ## gets completed entries
-#    df = df[(df['State'] == 'COMPLETED')]
-#    return extract_workflow(df)
-
-def parse(path): # takes a file as input and returns a dataframe
+def parse(path):
+    df = pd.read_csv(path, header=None, delimiter=r"\s+")
+    df.columns =  list(df.loc[0]) # set headers
+    ## gets completed entries
+    df = df[(df['State'] == 'COMPLETED')]
+    return extract_workflow(df)
+    
+def parse_dkp(path): # takes a file as input and returns a dataframe
     headers = ['Workflow', 'ConsumedEnergy', 'Elapsed', 'AveRSS', 'SystemCPU', 'UserCPU', 'NCPUS']
     rows = []
  
@@ -119,7 +119,7 @@ def parse(path): # takes a file as input and returns a dataframe
                     'Elapsed': elapsed,
                     'ConsumedEnergy': convert_to_mega_joule(splitted[7]),
                     'AveRSS': convert_to_gb(splitted[8]),
-                    'NCPUS': int(ncpus),
+                    'NCPUS': ncpus,
                     'AveCPU': aveCPU
                 }
  
@@ -134,7 +134,7 @@ def read_dataset(files):
     1-Converts the content of the files to a format convient for manipulation 
     2-Concats the content of the files  
     '''
-    dfs = [parse(f) for f in files]
+    dfs = [parse_dkp(f) for f in files]
     return pd.concat(dfs, ignore_index=True)
     
 # ----- FUNCTIONS TO FILTER THE DATASET ----- # 
@@ -201,7 +201,7 @@ def get_node(data, node='gl5'):
     return data[data.iloc[:, 3] == node]
 
 # remove outliers for each number of vCPUS
-def remove_outliers(data, threshold=3, column='Elapsed'):
+def remove_outliers_cpus(data, threshold=3, column='Elapsed'):
     # check if data contains 'NCPUS'
     if 'NCPUS' not in data.columns:
         return 'NCPUS not found'
@@ -212,7 +212,7 @@ def remove_outliers(data, threshold=3, column='Elapsed'):
         chunk = data[data['NCPUS'] == cpus]
 
         # remove outliers for the column related to ConsumedEnergy 
-        filtered_chunk = z_score(
+        filtered_chunk = remove_outliers(
             chunk,
             column,
             threshold=threshold
@@ -225,7 +225,7 @@ def remove_outliers(data, threshold=3, column='Elapsed'):
     return pd.concat(result, axis=0, ignore_index=True)
 
 # remove outliers using the interquartile (IQR) method
-def z_score(data, column, threshold=3):
+def remove_outliers(data, column, threshold=3):
     z_scores = np.abs(
         (data[column] - data[column].mean()) / data[column].std()
     )
@@ -287,7 +287,6 @@ def calc_cliffs_delta(data: pd.DataFrame, column="ConsumedEnergy"):
 
 def calc_groups_improvement(data: pd.DataFrame, column="ConsumedEnergy"):
     result = []
-    # functions to calculate the improvement and the delta
     improv = lambda x,y: ((y - x) / x) * 100 
     delta = lambda x,y: (y - x)
 
@@ -299,28 +298,28 @@ def calc_groups_improvement(data: pd.DataFrame, column="ConsumedEnergy"):
         chunk0 = data[data['NCPUS'] == group[0]][column]
         chunk1 = data[data['NCPUS'] == group[1]][column]
 
+        mean_improv = improv(
+            chunk1.mean(), chunk0.mean()
+        )
+
         median_improv = improv(
             chunk1.median(), chunk0.median()
-        )
-
-        median_delta = delta(
-            chunk1.median(), chunk0.median() 
-        )
-
-        mean_improv = improv(
-            chunk1.mean(), chunk0.mean() 
         )
 
         mean_delta = delta(
             chunk1.mean(), chunk0.mean()
         )
 
+        median_delta = delta(
+            chunk1.median(), chunk0.median()
+        )
+
         result.append({
             'CPU-GROUPS' : group, 
-            'Median Improvement': median_improv,
-            'Median Delta': median_delta,
             'Mean Improvement': mean_improv,
-            'Mean Delta': mean_delta
+            'Median Improvement': median_improv,
+            'Mean Delta': mean_delta,
+            'Median Delta': median_delta
         })
 
     return pd.DataFrame(result)

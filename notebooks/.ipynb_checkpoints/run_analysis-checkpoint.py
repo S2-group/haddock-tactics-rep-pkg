@@ -128,7 +128,9 @@ def gen_avg_cpu_plot():
     
     field_name = '%user_%system'
     
-    cpu_util_df[field_name] = cpu_util_df['%user'] + cpu_util_df['%system']
+    #cpu_util_df[field_name] = #cpu_util_df['%user'] + cpu_util_df['%system']
+    #cpu_util_df[field_name] = cpu_util_df['%system']
+    cpu_util_df[field_name] = cpu_util_df['%user']
     cpu_util_df_all = cpu_util_df[cpu_util_df['CPU'] == 'all']
     #print(list(cpu_util_df_all[field_name]))
     
