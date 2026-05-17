@@ -1,5 +1,4 @@
-### How does Parallelism impact the Energy Efficiency and Performance of High-Performance Scientific Software? The Case of Haddock
-
+### Mixed-Method Research in Action: A Researchers Experience in Scientific Software Performance and Energy Efficiency
 Replication Package of the study:
 
 **Title:** "Mixed-Method Research in Action: A Researchers Experience in Scientific Software Performance and Energy Efficiency"
